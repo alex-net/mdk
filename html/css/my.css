@@ -7,17 +7,27 @@
     visibility: hidden;
 }
 
-.page-wrapper {width:972px;border:1px solid red;margin:0 auto;}
+.page-wrapper {width:972px;/*border:1px solid red;*/margin:0 auto;}
 body {padding:0;margin:0;}
-.site-head-all {height:108px; background-color:green;}
+.site-head-all {height:108px;}
 .site-logo {width:198px;height:108px;background:url(../imgs/site-logo.png) no-repeat;}
 .site-head,.site-head-menu,.site-logo, .phone-number-description ,.phone-number-txt {float:left;}
 .site-head{width:770px;}
-.phone-number {padding:0 0 0 60px;height:40px;background:url(../imgs/phone.png) 15px 0 no-repeat;float:left;}
-.phone-number-txt {padding-top:5px;}
+.phone-number {padding:0 0 0 65px;height:40px;background:url(../imgs/phone.png) 15px 0 no-repeat;float:left;}
+.phone-number-txt {padding-top:3px;}
+.phone-number-txt span {padding:0 5px;}
 .phone-number-txt .ncode {color:#909090;font:21px/21px normal Arial;}
 .phone-number-txt .nnumber {color:#379ee4;font:32px/21px bold Arial;}
-.phone-number-description {width:75px;color:#8e8e8e;font:9px/16px normal Arial;text-transform:uppercase;}
-.site-cart {float:right;padding:0 20px 0 50px;background:url(../imgs/cart-ico.png) no-repeat;height:37px;}
+.phone-number-description {width:80px;color:#8e8e8e;font:9px/16px normal Arial;text-transform:uppercase;}
+.site-cart {float:right;padding:0 40px 0 50px;background:url(../imgs/cart-ico.png) no-repeat;height:37px;text-transform:uppercase;}
+.site-cart {}
 .site-cart .cart-block-title {font: 12px/13px normal Arial; color:#8e8e8e;padding:10px 0 0 0 ;}
 .site-cart .cart-content {font: 9px/13px normal Arial; color:#39a3e7;}
+
+.site-head-menu {background:url(../imgs/head-menu-bg.png) 0 0 repeat-x; float:right; border-radius:23px 0 0 23px;margin-top:7px;box-shadow:#b8b8b8 -1px -1px 1px;filter: progid:DXImageTransform.Microsoft.shadow(direction=-45, color=#b8b8b8, strength=1);behavior: url(css/pie.htc);} 
+.site-head-menu ul {padding:5px 269px 5px 2px;margin:0;}
+.site-head-menu ul li {float:left;list-style:none outside none;}
+.site-head-menu ul li div{ border:2px solid #fff;zoom:1;border-radius:18px; height:20px;background:url(../imgs/head-menu-btn-bg.png)  0 0 repeat-x transparent;padding:8px 18px;margin:0 3px;position:relative;behavior: url(css/pie.htc);}
+.site-head-menu ul li div:hover{background-position: 0 -36px;}
+.site-head-menu ul li div a {font:14px/20px normal Arial;color:#fff;text-decoration:none;text-transform:uppercase;}
+
