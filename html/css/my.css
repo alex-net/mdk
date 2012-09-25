@@ -14,6 +14,7 @@
 .container-inline .fieldset-wrapper {
   display: block;
 }
+.clear {clear:both;}
 /*-----------------------*/
 .page-wrapper {width:972px;/*border:1px solid red;*/margin:0 auto;}
 body {padding:0;margin:0;}
@@ -101,10 +102,10 @@ body {padding:0;margin:0;}
 .block-shadow-r {border-radius:0 0 6px 6px;box-shadow:0px 8px 15px -11px #777777;margin-left:0;padding:20px 0  15px 0; }
 
 /* контентная часть страницы */
-.page-body-content { width:530px;margin:0 auto;}
+.page-body-content { width:494px;margin:0 auto;padding:0 18px 35px;}
 
 /* фильтр */
-.titl-page-and-filter {background-color:#379ee4;border-radius:0 0 4px 4px;position:relative;box-shadow:0 26px 14px -23px black;-moz-box-shadow:0 26px 14px -23px black;-webkit-box-shadow:0 26px 14px -23px black; margin:0 18px;}
+.titl-page-and-filter {background-color:#379ee4;border-radius:0 0 4px 4px;position:relative;box-shadow:0 26px 14px -23px black;-moz-box-shadow:0 26px 14px -23px black;-webkit-box-shadow:0 26px 14px -23px black; }
 .titl-page-and-filter h1 {font:14px/20px normal Arial;color:white;padding:15px;margin:0;text-transform:uppercase;}
 .titl-page-and-filter .param-filter-link {position:absolute;top:10px;right:15px;font:10px/27px normal Arial;text-transform:uppercase;}
 .filter-container {display:none;}
@@ -115,20 +116,20 @@ body {padding:0;margin:0;}
 .filtr-per-tachka .input-data div {padding:9px;line-height:40px;}
 .filter-container .input-data div select{border-radius:7px;border:1px solid #1a69b8;padding:3px;background:linear-gradient(top,white,#ebebeb);background:-moz-linear-gradient(top,white,#ebebeb);background:-o-linear-gradient(top,white,#ebebeb);background:-ms-linear-gradient(top,white,#ebebeb);background:-webkit-linear-gradient(top,white,#ebebeb);-pie-background:linear-gradient(top,white,#ebebeb);box-shadow:0 5px 2px -5px black inset;font:12px/27px normal Arial;position:relative;}
 .filtr-per-rasmer .input-data div select {width:105px;}
-.filtr-per-tachka .input-data div select {width:225px;}
+.filtr-per-tachka .input-data div select {width:224px;}
 .filter-container .gogo{padding:20px 15px; text-align:right;}
 .filter-container .gogo input {font:12px/20px bold Arial;color:#379ee4;background-color:#fcfbfa;border:none;border-radius:15px;padding:7px 12px;position:relative;}
 .filter-container .form-title {font:12px/27px bold Arial; color:#fbd51a;text-transform:uppercase;padding-left:15px;}
 
 /* Список товаров */
 .tovar-list {padding-top:27px;}
-.tovar-list ul {margin:0;list-style:none outside none;padding:0;}
+.tovar-list ul {margin:0 -18px;list-style:none outside none;padding:0;}
 .tovar-list ul li {*display:inline;zoom:1;display:inline-block;margin:17px;padding:5px 5px 0;border:2px solid #379ee4;border-radius:7px;overflow:hidden;position:relative;text-align:center;}
 .tovar-list ul li .tovat-capt {background-color:#379ee4;padding:0 5px;margin:0 -5px;position:relative;}
 .tovar-list ul li .tovat-capt a{font:10px/27px normal Arial;color:white;text-decoration:none;}
 .tovar-list ul li img {width:125px; height:125px;margin:0 0 -10px; }
 
-.text-block {padding:0 18px;}
+
 .text-block p{font:12px normal Arial;color:black;text-align:justify;}
 .footer {padding:0 15px 15px;}
 .page-content-wrapper {box-shadow:0 16px 25px -25px black;-moz-box-shadow:0 16px 25px -25px black;-webkit-box-shadow:0 16px 25px -25px black;background:white;}
@@ -137,3 +138,69 @@ body {padding:0;margin:0;}
 .contacts .b-content{font:12px normal Arial;color:black;}
 .contacts .b-capt {font:12px normal Arial;color:#379ee4;margin-bottom:2px;}
 .contacts {width:200px;}
+
+/* Страница корзинки */
+.cart-block-list {padding-top:35px;}
+
+.cart-block-list ul {padding:0;margin:0;list-style:none outside none;}
+.cart-block-list ul li {display:inline-block;}
+.cart-item .cart-item-img,.cart-item .cart-item-data {float:left;}
+
+.cart-item-img {width:126px; height:126px;border:2px solid #37a0e5;border-radius:6px;padding:12px;}
+.cart-item-data {width:315px;padding-left:25px;position:relative;height:156px;}
+.cart-item .item-titl {font:14px/12px bold Arial;color:#379ee4;padding-bottom:5px;}
+.cart-item .cart-item-param {font:12px/16px normal Arial;color:black;}
+.cart-item .cart-item-count {padding:25px 0 15px;}
+.cart-item .cart-item-count label {font:12px normal Arial; color:#37a0e5;}
+.cart-item .cart-item-count input {width:60px;border:1px solid #1a69b8;border-radius:7px;padding:2px;font:12px/16px normal Arial;margin-left:20px;box-shadow:inset 1px 1px 5px -3px;-moz-box-shadow:inset 1px 1px 5px -3px; -webkit-box-shadow:inset 1px 1px 5px -3px; }
+.cart-item .cart-item-price {float:left; font:22px/16px bold Arial; color:#37a0e5;}
+.cart-item .del {float:right;padding-right:25px;}
+.cart-item .del a {display:block;padding-left:20px;background:url(../imgs/del.gif) 0 center no-repeat ;font:12px/20px normal Arial;color:black;}
+.cart-item-control {position:absolute;left:0;bottom:0;width:100%;padding-left:25px;}
+.cart-to-checkout {margin:-5px 0 0 5px;} 
+.cart-to-checkout input {font:12px/13px normal Arial;color:white; border:none;padding:11px;text-transform:uppercase;border-radius:25px;background:linear-gradient(top,#3aa5e9,#1968b7);background:-moz-linear-gradient(top,#3aa5e9,#1968b7);background:-o-linear-gradient(top,#3aa5e9,#1968b7);background:-ms-linear-gradient(top,#3aa5e9,#1968b7);background:-webkit-linear-gradient(top,#3aa5e9,#1968b7);-pie-background:linear-gradient(top,#3aa5e9,#1968b7);}
+
+/* форма чекоута */
+.checkout-form-wrapper {background-color:#379ee4;padding:15px;margin-top:30px;border-radius:5px;}
+.checkout-form-wrapper select,.checkout-form-wrapper input,.checkout-form-wrapper textarea {border-radius:5px;border:1px solid #1a69b8;padding:2px;box-shadow:inset 1px 1px 5px -3px;-moz-box-shadow:inset 1px 1px 5px -3px; -webkit-box-shadow:inset 1px 1px 5px -3px;font:12px normal Arial;color:#202223;}
+
+.checkout-form-wrapper .titl {font:14px/20px normal Arial;color:white;}
+.checkout-form-wrapper .capt {font:12px/27px normal Arial;color:#fbd51a;}
+.region-sposobdostavki .regione {float:left;}
+.region-sposobdostavki .dostavka {float:right;}
+.region-sposobdostavki .regione input,.region-sposobdostavki .dostavka select{width:227px; }
+
+
+.dom-korp-kv {margin:0 -1px;}
+.dom-korp-kv div {float:left;padding:0 1px;}
+.checkout-form-wrapper .dom-korp-kv input {width:71px;}
+.region-sposobdostavki .regione > div {padding-bottom:10px;}
+
+.contact-data .fio-phone {float:left;}
+.contact-data .mail {float:right;}
+.contact-data input {width:224px;}
+.contact-data .fio-phone > div, .contact-data .mail > div {padding-bottom:10px;}
+
+.addon-param-to-sakas textarea {width:100%;}
+.addon-param-to-sakas .ta-wrapper {padding-right:5px;}
+
+.checkout-form-wrapper .gogo input {font:12px/20px bold Arial;color:#379ee4; border:none;padding:11px;margin:20px 0 20px 5px;text-transform:uppercase;border-radius:25px;background:linear-gradient(top,white,#d4d3d2);background:-moz-linear-gradient(top,white,#d4d3d2);background:-o-linear-gradient(top,white,#d4d3d2);background:-ms-linear-gradient(top,white,#d4d3d2);background:-webkit-linear-gradient(top,white,#d4d3d2);-pie-background:linear-gradient(top,white,#d4d3d2);}
+
+/* карточка товара */
+.tovar-item-page {padding-top:30px;}
+.tovar-page-data  {overflow:hidden;}
+.tovar-page-data .img-tovar-page {float:left;}
+.tovar-page-data .tovar-data {float:right;width:190px;padding-right:17px;}
+.tovar-data .tovar-titl {font:14px/12px bold Arial;color:black;}
+.tovar-data .param-name {font:12px bold Arial;color:#37a0e5;padding-top:10px;}
+.tovar-data .param-value {font:12px bold Arial; color:black;}
+/*.tovar-data .price-data  > div {float:left;}*/
+.img-tovar-page img{width:275px;}
+.price-data .price {font:22px/13px bold Arial;color:#3ea5e9;}
+.price-data .t-count {font:12px/13px normal Arial;color:black;padding-top:15px;}
+.price-data {padding:10px 0;}
+.price-data .price-data-wrapper {float:left;} 
+.price-data .go-to-cart {float:right;} 
+.price-data .go-to-cart input {font:12px/13px normal Arial;color:white;border:none;padding:10px 12px;border-radius:20px;text-transform:uppercase;background:-moz-linear-gradient(top,#3aa5e9,#1967b6);background:linear-gradient(top,#3aa5e9,#1967b6);background:-ms-linear-gradient(top,#3aa5e9,#1967b6);background:-o-linear-gradient(top,#3aa5e9,#1967b6);background:-webkit-linear-gradient(top,#3aa5e9,#1967b6);-pie-background:linear-gradient(top,#3aa5e9,#1967b6);}
+.tovar-card-body p {text-align:justify;}
+.tovar-list-titl {padding-top:30px;}
